@@ -1,0 +1,319 @@
+
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('../fonts/Hellix-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('../fonts/Hellix-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+* :not(i){
+    font-family: 'Hellix' !important;
+
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+p {
+    font-size: 18px !important;
+}
+
+h4 {
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    margin-bottom: 14px !important;
+    margin-top: 10px !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+
+
+
+
+.btn1 {
+    padding: 7px 60px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    border-radius: 50px;
+    background: #1E83FF;
+    border: none;
+    margin-top: 17px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn1 img {
+    width: 40px;
+}
+
+div#card-item {
+    width: 440px;
+    background: #190269;
+}
+div#card-item img.welcome-icon {
+    width: 100%;
+    object-fit: cover;
+    height: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+}
+
+.sidebar {
+    color: white;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #bdbddd;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  opacity: 0.8;
+}
+
+.menu a span {
+  font-size: 15px;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 12px;
+  color: #8888aa;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.search-bar input#search-input {
+    background: linear-gradient(45deg, #eaeaea, #f9f9f9);
+    outline: none;
+    padding: 6px 20px;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.center-item.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 70%;
+}
+
+.center-item.search-bar button#search-icon {
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    border: none;
+    padding: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-item.search-bar button#search-icon i {
+    font-size: 16px !important;
+}
+div#top-bar {
+    padding: 8px 0px;
+    border-bottom: 1px solid #0000001f;
+}
+
+div#top-bar .inner .right-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    float: right;
+    width: 20%;
+    justify-content: flex-end;
+}
+div#top-bar .inner {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div#top-bar .inner .user-icon {
+    color: white;
+    background: #190269;
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+div#top-bar .inner i {
+    font-size: 22px;
+    color: black;
+}
+
+
+
+
+
+
+/* --- leaderboard ---  */
+
+
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 13px;
+  padding: 12px 20px;
+  border-radius: 14px !important;
+  box-shadow: 0px 0px 6px 0px #ccc;
+  position: relative;
+}
+
+.rank {
+  width: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.crown {
+  margin-left: 0;
+  color: gold;
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26px;
+}
+
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+.name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 210px;
+  margin-left: 20px;
+}
+
+.progress-bar-container {
+  flex: 3;
+  background: #CFCDED;
+  height: 22px;
+  border-radius: 5px;
+  margin: 0 30px 0 6px;
+  position: relative;
+}
+
+.progress-bar {
+  background: #2e3192;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.votes {
+  width: 80px;
+  text-align: right;
+  font-weight: 600;
+}
+.avatar {
+    position: relative;
+}
+
+
+
+/* Back Button */
+.back-button {
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  font-weight: 800;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.back-button i {
+  font-size: 19px;
+  background: #190269;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  line-height: 50px;
+}
