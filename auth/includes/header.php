@@ -1,3 +1,5 @@
+<?php include '../global.inc.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,7 @@
     <title>Kareoke</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="<?php echo SITE_URL?>assets/images/favicon.png">
 
 
     <!-- Bootstrap CSS -->

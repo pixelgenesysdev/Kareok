@@ -1,8 +1,3 @@
-<?php 
-include __DIR__ . '/../includes/head.php';
-?>
-
-
 <div id="box-main">
     
      <div class="event-leader-wrapper">
@@ -10,10 +5,9 @@ include __DIR__ . '/../includes/head.php';
             <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i>Team Black <div class="like" title="Vote">&#128077;</div></button>
         </div>
 
-    
 
-        <div id="user-list" class="user-list"></div>
-
+        <div id="user-list1" class="user-list"></div>
+    </div>
 </div>
 
 
@@ -21,22 +15,12 @@ include __DIR__ . '/../includes/head.php';
 
 <script>
 
-            const users = [
-            { name: "Aaron Guerrero", email: "aaronguerrero@gmail.com", avatar: "https://randomuser.me/api/portraits/men/32.jpg" },
-            { name: "Andrea Garcia", email: "andreagarcia@gmail.com", avatar: "https://randomuser.me/api/portraits/women/44.jpg" },
-            { name: "Denise Russell", email: "deniserussell@gmail.com", avatar: "https://randomuser.me/api/portraits/women/55.jpg" },
-            { name: "Larry Marshall", email: "larrymarshall@gmail.com", avatar: "https://randomuser.me/api/portraits/men/64.jpg" },
-            { name: "Patrick Ellis", email: "patrickellis@gmail.com", avatar: "https://randomuser.me/api/portraits/men/71.jpg" },
-            { name: "Christopher Sandoval", email: "chrissandoval@gmail.com", avatar: "https://randomuser.me/api/portraits/men/12.jpg" },
-            { name: "Timothy Ellis", email: "timothyellis@gmail.com", avatar: "https://randomuser.me/api/portraits/men/8.jpg" },
-            { name: "Alan Collins", email: "alancollins@gmail.com", avatar: "https://randomuser.me/api/portraits/men/90.jpg" },
-            { name: "Larry Marshall", email: "larrymarshall2@gmail.com", avatar: "https://randomuser.me/api/portraits/men/33.jpg" },
-            ];
 
-            const userList = document.getElementById("user-list");
+
+            const userList1 = document.getElementById("user-list1");
 
             function renderUsers(users) {
-            userList.innerHTML = users.map(user => `
+            userList1.innerHTML = users.map(user => `
                 <div class="user-card">
                 <img class="user-avatar" src="${user.avatar}" alt="${user.name}" />
                 <div class="user-info">
@@ -47,7 +31,7 @@ include __DIR__ . '/../includes/head.php';
             `).join("");
             }
 
-            renderUsers(users);
+            renderUsers(users1);
 
 
 </script>
@@ -133,6 +117,3 @@ include __DIR__ . '/../includes/head.php';
 
 
 
-<?php 
-include __DIR__ . '/../includes/footer.php';
-?>

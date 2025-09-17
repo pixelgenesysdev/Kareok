@@ -1,6 +1,3 @@
-<?php 
-include __DIR__ . '/../includes/head.php';
-?>
 
 <div id="box-main">
     
@@ -17,7 +14,3 @@ include __DIR__ . '/../includes/head.php';
     </div>
 
 </div>
-
-<?php 
-include __DIR__ . '/../includes/footer.php';
-?>

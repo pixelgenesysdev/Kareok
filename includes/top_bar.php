@@ -9,7 +9,7 @@
             <div class="notification-icon">
                 <i class="fa fa-bell" aria-hidden="true"></i>
             </div>
-             <div class="user-icon">
+             <div class="user-icon" style="cursor:pointer;" onclick="window.location.href='<?php echo SITE_URL; ?>auth/'">
                 <span>A</span>
             </div>
         </div>

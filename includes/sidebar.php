@@ -4,54 +4,51 @@
 
 <aside id="sidebar" class="sidebar col-md-2">
   <div class="logo">
-    <img src="<?php echo SITE_URL; ?>assets/images/logo.png" alt="League Live Karaoke" />
+    <img src="<?php echo SITE_URL; ?>assets/images/logo.png" style="cursor:pointer;" alt="League Live Karaoke" onclick="window.location.href='<?php echo SITE_URL; ?>pages/'" />
   </div>
 
+
+
+
   <nav class="menu">
-    <a href="<?php echo SITE_URL; ?>pages/dashboard.php" class="side-menu <?php echo ($currentPage == 'dashboard.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="Home" />
-      <span>Home</span>
+
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('Dashboard');">
+      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="Dashboard" /><span>Dashboard</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/team_black.php" class="side-menu <?php echo ($currentPage == 'team_black.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/discover.svg" alt="Discover" />
-      <span>Team Black</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('Discover');"> 
+      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="Discover" /><span>Discover</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/vote_now.php" class="side-menu <?php echo ($currentPage == 'vote_now.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/community.svg" alt="vote_now" />
-      <span>Vote Now</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('League');">
+       <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="League" /><span>League</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/Leagues.php" class="side-menu <?php echo ($currentPage == 'Leagues.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/leagues.svg" alt="Leagues" />
-      <span>Leagues</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('TeamBlack');">
+       <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="TeamBlack" /><span>TeamBlack</span>
     </a>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('LeaderBoard');">
+      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="LeaderBoard" /><span>LeaderBoard</span>
+    </a>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('VoteNow');">
+      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="VoteNow" /><span>VoteNow</span>
+    </a>
+   
   </nav>
 
   <div class="section-title">MY CHANNEL</div>
 
   <nav class="menu">
-    <a href="<?php echo SITE_URL; ?>pages/leaderboard.php" class="side-menu <?php echo ($currentPage == 'leaderboard.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/library.svg" alt="Library" />
-      <span>leaderboard</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('History');">
+      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="History" /><span>History</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/history.php" class="side-menu <?php echo ($currentPage == 'history.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/history.svg" alt="History" />
-      <span>History</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('YourVideos');"> 
+      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="YourVideos" /><span>YourVideos</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/your-videos.php" class="side-menu <?php echo ($currentPage == 'your-videos.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/discover.svg" alt="Your Videos" />
-      <span>Your Videos</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('WatchLater');">
+       <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="WatchLater" /><span>WatchLater</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/watch-later.php" class="side-menu <?php echo ($currentPage == 'watch-later.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/watchlater.svg" alt="Watch Later" />
-      <span>Watch Later</span>
+    <a id="nav-btn" class="btn-sidebar side-menu" onclick="DisplayContent('Downloads');">
+       <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/home.svg" alt="Downloads" /><span>Downloads</span>
     </a>
-    <a href="<?php echo SITE_URL; ?>pages/downloads.php" class="side-menu <?php echo ($currentPage == 'downloads.php') ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/downloads.svg" alt="Downloads" />
-      <span>Downloads</span>
-    </a>
-    <a href="<?php echo SITE_URL; ?>pages/dashboard.php" class="side-menu <?php echo ($currentPage == 'dashboard.php' && !isset($alreadyMarked)) ? 'active' : ''; ?>">
-      <img src="<?php echo SITE_URL; ?>assets/images/sidebar-icons/showmore.svg" alt="Show More" />
-      <span>Show More</span>
-    </a>
+
+
   </nav>
 </aside>

@@ -1,6 +1,4 @@
-<?php 
-include __DIR__ . '/../includes/head.php';
-?>
+
 
 <div id="box-main">
     
@@ -12,10 +10,7 @@ include __DIR__ . '/../includes/head.php';
         <div id="leaderboard">
     
         </div>
-
-
-
-
+      </div>
 </div>
 
 
@@ -62,8 +57,7 @@ function createUserRow(user, rank, isTop) {
 }
 
 
-
-leaderboardContainer.innerHTML = leaderboardData
+  leaderboardContainer.innerHTML = leaderboardData
   .map((user, index) => createUserRow(user, index + 1, index === 0))
   .join("");
 
@@ -74,6 +68,3 @@ leaderboardContainer.innerHTML = leaderboardData
 
 
 
-<?php 
-include __DIR__ . '/../includes/footer.php';
-?>

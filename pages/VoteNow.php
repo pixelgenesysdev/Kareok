@@ -1,13 +1,10 @@
-<?php 
-include __DIR__ . '/../includes/head.php';
-?>
 
 
 <div id="box-main">
     
      <div class="event-leader-wrapper">
         <div class="top-bar-page d-flex">
-            <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Leaderboard</button>
+            <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Vote Now</button>
         </div>
 
         <div id="vote-timer">
@@ -17,7 +14,7 @@ include __DIR__ . '/../includes/head.php';
         </div>
 
         <div id="user-list" class="user-list"></div>
-
+    </div>
 </div>
 
 
@@ -142,7 +139,3 @@ include __DIR__ . '/../includes/head.php';
 
 
 
-
-<?php 
-include __DIR__ . '/../includes/footer.php';
-?>
